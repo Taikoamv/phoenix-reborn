@@ -12,12 +12,13 @@
 
 <body>
   <nav class="navbar white-text navbar-expand-lg navbar-dark fixed-top" id="navbar">
-    <div class="container"><a class="navbar-brand" href="index.html"><strong>GoldenNetwork</strong></a>
+    <div class="container"><a class="navbar-brand" href="index.html"><strong>TitaniumPhoenix</strong></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbarContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"><a class="nav-link waves-effect waves-light" href="/">Go Home</a></li>
           <li class="nav-item"><a class="nav-link waves-effect waves-light" href="../selection3.html">Games</a></li>
+          <li class="nav-item"><a class="nav-link waves-effect waves-light" href="../selection2.html">Watch Movies/TV</a></li>
           <li class="nav-item"><a class="nav-link waves-effect waves-light" href="../contributors.html">Staff & Contributors</a></li>
         </ul>
         <a class="btn btn-primary btn-rounded my-0 waves-effect waves-light" href="https://github.com/titaniumnetwork-dev" target="_blank">Check us out on Github!</a>
@@ -40,7 +41,7 @@
               </p>
             </form>
           </center>
-          <center>Titanium Network has partnered with <a href="https://nice.under.wear.tk">Muun</a> to create this proxy.
+          <center>Titanium Network has partnered with <a href="https://muun.cf">Muun</a> to create this proxy.
             <p>Muun is a highly optimized fork of Node Unblocker that allows you to play games at school without those pesky block screens or any performance drops!</p>
           </center>
           <div class="d-box">          <!--<div class="d-box"></div>-->
@@ -63,9 +64,9 @@
           let key;
           let current;
           async function fetchDetails() {
-            key = await fetch('https://nice.under.wear.tk/apikey')
+            key = await fetch('https://muun.cf/apikey')
                .then((res) => res.json());
-            current = await fetch('https://nice.under.wear.tk/currenturl')
+            current = await fetch('https://muun.cf/currenturl')
               .then((res) => res.json());
           }
           fetchDetails();
@@ -76,9 +77,9 @@
           $('web-search-box').onsubmit = function() {
             var url = $('url').value;
             //this is the URL for the server
-            //mun.nopapa.ml/get?url=
-            //window.location.href = `https://${current.url}/?key=${key.key}&ref=${url}&from=Forsuregoty099`;
-            window.location.href = `https://mun.nopapa.m/get?url=${url}`;
+            //mun.suncolor.live/get?url=
+            //window.location.href = `https://${current.url}/?key=${key.key}&ref=${url}&from=TitaniumNetwork`;
+            window.location.href = `https://mun.suncolor.live/get?url=${url}`;
             return false;  
           };
           window.onload = function() {
