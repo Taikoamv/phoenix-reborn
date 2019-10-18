@@ -40,7 +40,7 @@
               </p>
             </form>
           </center>
-          <center>Titanium Network has partnered with <a href="https://muun.cf">Muun</a> to create this proxy.
+          <center>Titanium Network has partnered with <a href="https://nice.under.wear.tk">Muun</a> to create this proxy.
             <p>Muun is a highly optimized fork of Node Unblocker that allows you to play games at school without those pesky block screens or any performance drops!</p>
           </center>
           <div class="d-box">          <!--<div class="d-box"></div>-->
@@ -63,9 +63,9 @@
           let key;
           let current;
           async function fetchDetails() {
-            key = await fetch('https://muun.cf/apikey')
+            key = await fetch('https://nice.under.wear.tk/apikey')
                .then((res) => res.json());
-            current = await fetch('https://muun.cf/currenturl')
+            current = await fetch('https://nice.under.wear.tk/currenturl')
               .then((res) => res.json());
           }
           fetchDetails();
@@ -78,7 +78,7 @@
             //this is the URL for the server
             //mun.suncolor.live/get?url=
             //window.location.href = `https://${current.url}/?key=${key.key}&ref=${url}&from=TitaniumNetwork`;
-            window.location.href = `https://mun.suncolor.live/get?url=${url}`;
+            window.location.href = `https://mun.impossible-arena.gq/get?url=${url}`;
             return false;  
           };
           window.onload = function() {
