@@ -6,13 +6,12 @@ A very limited way to edit elements of a site you're on if Inspect Element is bl
 Setup: Create a bookmark, copy the provided code and paste it in as the URL (name it whatever you want).
 
 
-javascript:(function() {
-var script=document.createElement('script');
-script.src='https://goggles.mozilla.org'+'/webxray.js';
-script.className='webxray';
-script.setAttribute('data-lang','en-US');
-script.setAttribute('data-baseuri','https://goggles.mozilla.org');
-document.body.appendChild(script);}())
 
+--Inspect On--
 
-If this doesn't work, notify a staff member on the discord.
+javascript:document.body.contentEditable = 'true'; document.designMode='on'; void 0
+
+--Inspect Off-
+
+javascript:document.body.contentEditable = 'false'; document.designMode='off'; void 0
+
